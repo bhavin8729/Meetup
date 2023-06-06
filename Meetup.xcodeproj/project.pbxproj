@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B699B94FBD43D48490D2FC9 /* Pods_Meetup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B2117D785DCC1FD8170938 /* Pods_Meetup.framework */; };
 		D0A6A8AD2A2EEADD00939E83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6A8AC2A2EEADD00939E83 /* AppDelegate.swift */; };
 		D0A6A8AF2A2EEADD00939E83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6A8AE2A2EEADD00939E83 /* SceneDelegate.swift */; };
 		D0A6A8B12A2EEADD00939E83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6A8B02A2EEADD00939E83 /* ViewController.swift */; };
 		D0A6A8B42A2EEADD00939E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A6A8B22A2EEADD00939E83 /* Main.storyboard */; };
 		D0A6A8B62A2EEAE100939E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A6A8B52A2EEAE100939E83 /* Assets.xcassets */; };
 		D0A6A8B92A2EEAE100939E83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A6A8B72A2EEAE100939E83 /* LaunchScreen.storyboard */; };
+		D0A6A8C12A2EEE2700939E83 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0A6A8C02A2EEE2700939E83 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05B2117D785DCC1FD8170938 /* Pods_Meetup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meetup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82D7067F284A84A91BA69855 /* Pods-Meetup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meetup.release.xcconfig"; path = "Target Support Files/Pods-Meetup/Pods-Meetup.release.xcconfig"; sourceTree = "<group>"; };
+		9A73373E0DB61613D7FD161A /* Pods-Meetup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meetup.debug.xcconfig"; path = "Target Support Files/Pods-Meetup/Pods-Meetup.debug.xcconfig"; sourceTree = "<group>"; };
 		D0A6A8A92A2EEADD00939E83 /* Meetup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meetup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A6A8AC2A2EEADD00939E83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0A6A8AE2A2EEADD00939E83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		D0A6A8B52A2EEAE100939E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0A6A8B82A2EEAE100939E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0A6A8BA2A2EEAE100939E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0A6A8C02A2EEE2700939E83 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B699B94FBD43D48490D2FC9 /* Pods_Meetup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47B40404FEC383367FB8EE8C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A73373E0DB61613D7FD161A /* Pods-Meetup.debug.xcconfig */,
+				82D7067F284A84A91BA69855 /* Pods-Meetup.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D0A6A8A02A2EEADD00939E83 = {
 			isa = PBXGroup;
 			children = (
 				D0A6A8AB2A2EEADD00939E83 /* Meetup */,
 				D0A6A8AA2A2EEADD00939E83 /* Products */,
+				47B40404FEC383367FB8EE8C /* Pods */,
+				E3DEFCD7E7C0427AF4A909FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +74,48 @@
 		D0A6A8AB2A2EEADD00939E83 /* Meetup */ = {
 			isa = PBXGroup;
 			children = (
+				D0A6A8C42A2EEF6A00939E83 /* Extentions */,
+				D0A6A8C32A2EEF5A00939E83 /* Controller */,
+				D0A6A8C22A2EEE4500939E83 /* Storyboard */,
 				D0A6A8AC2A2EEADD00939E83 /* AppDelegate.swift */,
 				D0A6A8AE2A2EEADD00939E83 /* SceneDelegate.swift */,
-				D0A6A8B02A2EEADD00939E83 /* ViewController.swift */,
-				D0A6A8B22A2EEADD00939E83 /* Main.storyboard */,
 				D0A6A8B52A2EEAE100939E83 /* Assets.xcassets */,
-				D0A6A8B72A2EEAE100939E83 /* LaunchScreen.storyboard */,
 				D0A6A8BA2A2EEAE100939E83 /* Info.plist */,
+				D0A6A8C02A2EEE2700939E83 /* GoogleService-Info.plist */,
 			);
 			path = Meetup;
+			sourceTree = "<group>";
+		};
+		D0A6A8C22A2EEE4500939E83 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D0A6A8B72A2EEAE100939E83 /* LaunchScreen.storyboard */,
+				D0A6A8B22A2EEADD00939E83 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D0A6A8C32A2EEF5A00939E83 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D0A6A8B02A2EEADD00939E83 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D0A6A8C42A2EEF6A00939E83 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		E3DEFCD7E7C0427AF4A909FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05B2117D785DCC1FD8170938 /* Pods_Meetup.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0A6A8BD2A2EEAE100939E83 /* Build configuration list for PBXNativeTarget "Meetup" */;
 			buildPhases = (
+				085546A750384F450842411E /* [CP] Check Pods Manifest.lock */,
 				D0A6A8A52A2EEADD00939E83 /* Sources */,
 				D0A6A8A62A2EEADD00939E83 /* Frameworks */,
 				D0A6A8A72A2EEADD00939E83 /* Resources */,
+				5EB49F21AA473C356832D843 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +179,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0A6A8B92A2EEAE100939E83 /* LaunchScreen.storyboard in Resources */,
+				D0A6A8C12A2EEE2700939E83 /* GoogleService-Info.plist in Resources */,
 				D0A6A8B62A2EEAE100939E83 /* Assets.xcassets in Resources */,
 				D0A6A8B42A2EEADD00939E83 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		085546A750384F450842411E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meetup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EB49F21AA473C356832D843 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meetup/Pods-Meetup-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meetup/Pods-Meetup-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meetup/Pods-Meetup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0A6A8A52A2EEADD00939E83 /* Sources */ = {
@@ -282,6 +378,7 @@
 		};
 		D0A6A8BE2A2EEAE100939E83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A73373E0DB61613D7FD161A /* Pods-Meetup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,7 +388,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Meetup/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -310,6 +407,7 @@
 		};
 		D0A6A8BF2A2EEAE100939E83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82D7067F284A84A91BA69855 /* Pods-Meetup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -319,7 +417,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Meetup/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
