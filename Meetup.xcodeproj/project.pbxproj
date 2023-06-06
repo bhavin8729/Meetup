@@ -10,11 +10,12 @@
 		1B699B94FBD43D48490D2FC9 /* Pods_Meetup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B2117D785DCC1FD8170938 /* Pods_Meetup.framework */; };
 		D0A6A8AD2A2EEADD00939E83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6A8AC2A2EEADD00939E83 /* AppDelegate.swift */; };
 		D0A6A8AF2A2EEADD00939E83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6A8AE2A2EEADD00939E83 /* SceneDelegate.swift */; };
-		D0A6A8B12A2EEADD00939E83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6A8B02A2EEADD00939E83 /* ViewController.swift */; };
 		D0A6A8B42A2EEADD00939E83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A6A8B22A2EEADD00939E83 /* Main.storyboard */; };
 		D0A6A8B62A2EEAE100939E83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A6A8B52A2EEAE100939E83 /* Assets.xcassets */; };
 		D0A6A8B92A2EEAE100939E83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A6A8B72A2EEAE100939E83 /* LaunchScreen.storyboard */; };
 		D0A6A8C12A2EEE2700939E83 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0A6A8C02A2EEE2700939E83 /* GoogleService-Info.plist */; };
+		D0A6A8C62A2F3DB000939E83 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6A8C52A2F3DB000939E83 /* LoginView.swift */; };
+		D0A6A8C82A2F3DD000939E83 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A6A8C72A2F3DD000939E83 /* SignupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +25,13 @@
 		D0A6A8A92A2EEADD00939E83 /* Meetup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meetup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0A6A8AC2A2EEADD00939E83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0A6A8AE2A2EEADD00939E83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D0A6A8B02A2EEADD00939E83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0A6A8B32A2EEADD00939E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0A6A8B52A2EEAE100939E83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0A6A8B82A2EEAE100939E83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0A6A8BA2A2EEAE100939E83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0A6A8C02A2EEE2700939E83 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D0A6A8C52A2F3DB000939E83 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D0A6A8C72A2F3DD000939E83 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 		D0A6A8C32A2EEF5A00939E83 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D0A6A8B02A2EEADD00939E83 /* ViewController.swift */,
+				D0A6A8C52A2F3DB000939E83 /* LoginView.swift */,
+				D0A6A8C72A2F3DD000939E83 /* SignupView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -234,8 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0A6A8B12A2EEADD00939E83 /* ViewController.swift in Sources */,
+				D0A6A8C82A2F3DD000939E83 /* SignupView.swift in Sources */,
 				D0A6A8AD2A2EEADD00939E83 /* AppDelegate.swift in Sources */,
+				D0A6A8C62A2F3DB000939E83 /* LoginView.swift in Sources */,
 				D0A6A8AF2A2EEADD00939E83 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
